@@ -1,16 +1,17 @@
 import sys
-sys.path.append(r"C:\Users\nhan.pham\Desktop\Projects\Robust_video_matting\pytorch_inference")
 import os
-import shutil
 from fastapi import FastAPI, File, UploadFile
 from fastapi.responses import FileResponse
+import shutil
 import torch
-from pytorch_inference.model import MattingNetwork
-from pytorch_inference.inference import convert_video
+
+sys.path.append(os.getcwd() + r"\pytorch_inference")
 
 # Load the model
+from pytorch_inference.model import MattingNetwork
+from pytorch_inference.inference import convert_video
 model = MattingNetwork('mobilenetv3')
-model.load_state_dict(torch.load(os.getcwd() + r'\pytorch_inference\rvm_mobilenetv3.pth'))
+model.load_state_dict(torch.load(r'pytorch_inference\rvm_mobilenetv3.pth'))
 app=FastAPI()
 
 #Convert the video
