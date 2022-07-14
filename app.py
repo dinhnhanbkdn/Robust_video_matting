@@ -23,9 +23,9 @@ async def create_file(file: UploadFile = File(...)):
             model,
             input_source="video.mp4",
             output_type='video',
-            output_composition='com.mp4',
-            output_alpha='pha.mp4',
-            output_foreground='fgr.mp4',
+            output_composition=r'converted_video\com.mp4',
+            output_alpha=r'converted_video\pha.mp4',
+            output_foreground=r'converted_video\fgr.mp4',
             output_video_mbps=4,
             downsample_ratio=None,
             seq_chunk=12,
@@ -35,5 +35,5 @@ async def create_file(file: UploadFile = File(...)):
 #Download the converted video
 @app.get("/")
 async def download_file():
-    file_path = "com.mp4"
+    file_path = r"converted_video\com.mp4"
     return FileResponse(path = file_path, filename = file_path)
