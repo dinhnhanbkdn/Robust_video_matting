@@ -16,6 +16,6 @@ pip install -r requirements.txt
 ```
 uvicorn app:app --reload
 ```
-Check the Swagger: http://127.0.0.1:8000/docs
-Here, you can upload the video from your computer and wait for it to process. Then, you can download the converted video to your computer 
+- Check the Swagger: http://127.0.0.1:8000/docs
+- Here, you can upload the video from your computer and wait for it to process. Then, you can download the converted video to your computer 
 ####
