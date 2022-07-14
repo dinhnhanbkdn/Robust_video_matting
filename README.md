@@ -9,13 +9,13 @@ We are going to build a robust, real-time, high-resolution human video matting t
 ####
 1. Mount to the project location
 2. Install libraries
-'''
+```
 pip install -r requirements.txt
-'''
+```
 3. Start FastAPI
-'''
+```
 uvicorn app:app --reload
-'''
+```
 Check the Swagger: http://127.0.0.1:8000/docs
 Here, you can upload the video from your computer and wait for it to process. Then, you can download the converted video to your computer 
 ####
