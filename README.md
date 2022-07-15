@@ -21,7 +21,7 @@ uvicorn app:app --reload
 ####
 ## Reference
 ####
-If you want to know more about the structure of the model, how to train, inference and how to export the model between frameworks more detail, try the links below:
+If you want to know more about the structure of the model, how to train, inference and how to export the model between frameworks (they are similar to pytorch) more detail, try the links below:
 - https://github.com/PeterL1n/RobustVideoMatting
 - https://arxiv.org/abs/2108.11515
 ####
