@@ -17,5 +17,11 @@ pip install -r requirements.txt
 uvicorn app:app --reload
 ```
 - Check the Swagger: http://127.0.0.1:8000/docs
-- Here, you can upload the video from your computer and wait for it to process. Then, you can download the converted video to your computer 
+- Here, you can upload the video from your computer and wait for it to be processed. Then, you can download the converted video to your computer 
+####
+## Reference
+####
+If you want to know more about the structure of the model, how to train, inference and how to export the model between frameworks more detail, try the links below:
+- https://github.com/PeterL1n/RobustVideoMatting
+- https://arxiv.org/abs/2108.11515
 ####
