@@ -8,8 +8,8 @@
         const canvas = document.querySelector("canvas");
         const select = document.querySelector("select");
 
-        video.width = 640;
-        video.height = 480;
+        video.width = 600;
+        video.height = 400;
         const webcam = await tf.data.webcam(video);
         const model = await tf.loadGraphModel("model/model.json");
 
@@ -122,7 +122,7 @@
         <header class="header" style="padding: 128px 16px">
           <img
             class="logo"
-            src="./assets/293686255_1231665977664803_3835373993682293468_n.png"
+            src="./assets/logo.png"
           />
           <h1>Robust High Resolution Video Matting</h1>
         </header>

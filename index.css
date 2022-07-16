@@ -4,10 +4,11 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   font-family: "Courier New", Courier, monospace;
+  overflow-y: hidden;
 }
 
 .container {
-  height: 100%;
+  max-height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -21,17 +22,17 @@ body {
 
 .selector {
   max-width: 280px;
-  padding: 16px;
-  height: 60px;
+  padding: 12px;
+  height: 48px;
   border-radius: 16px;
-  font-size: 22px;
+  font-size: 18px;
   margin-bottom: 24px;
-  text-align: center;
 }
 
 header {
   text-align: center;
-  padding: 0 !important;
+  padding-bottom:0 !important;
+  padding-top: 24px !important;
 }
 video,
 canvas {
@@ -40,8 +41,8 @@ canvas {
 }
 
 canvas {
-  width: 640;
-  height: 480;
+  width: 600;
+  height: 400;
 }
 
 .logo {
