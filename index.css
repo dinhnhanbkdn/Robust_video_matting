@@ -1,0 +1,52 @@
+body {
+  max-height: 100vh;
+  background-image: url("./assets/logorobust.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: "Courier New", Courier, monospace;
+}
+
+.container {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.content {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.selector {
+  max-width: 280px;
+  padding: 16px;
+  height: 60px;
+  border-radius: 16px;
+  font-size: 22px;
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+header {
+  text-align: center;
+  padding: 0 !important;
+}
+video,
+canvas {
+  border-radius: 12px;
+  margin: 12px;
+}
+
+canvas {
+  width: 640;
+  height: 480;
+}
+
+.logo {
+  margin-top: 24px;
+  max-width: 400px;
+  height: 180px;
+  object-fit: contain;
+}
